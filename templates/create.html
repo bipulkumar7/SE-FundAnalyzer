@@ -1,0 +1,78 @@
+{% block content %}
+    <h1 style="width: 100%">{% block title %} Add a record {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="permalink">permalink</label>
+            <input type="text" name="permalink"
+                   placeholder="permalink">
+            </input>
+        </p>
+
+        <p>
+            <label for="company">company</label>
+            <input type="text" name="company"
+                   placeholder="company">
+            </input>
+        </p>
+
+        <p>
+            <label for="numEmps">numEmps</label>
+            <input type="number" name="numEmps"
+                   placeholder="numEmps">
+            </input>
+        </p>
+
+            <p>
+            <label for="category">category</label>
+            <input type="text" name="category"
+                   placeholder="category">
+            </input>
+            </p>
+            <p>
+            <label for="city">city</label>
+            <input type="text" name="city"
+                   placeholder="city">
+            </input>
+            </p>
+        
+        
+            <p>
+            <label for="state">state</label>
+            <input type="text" name="state"
+                   placeholder="state">
+            </input>
+            </p>
+        
+            <p>
+            <label for="fundedDate">fundedDate</label>
+            <input type="date" name="fundedDate"
+                   placeholder="fundedDate">
+            </input>
+            </p>
+        
+            <p>
+            <label for="raisedAmt">raisedAmt</label>
+            <input type="number" name="raisedAmt"
+                   placeholder="raisedAmt">
+            </input>
+            </p>
+        
+              <p>
+            <label for="raisedCurrency">raisedCurrency</label>
+            <input type="text" name="raisedCurrency"
+                   placeholder="raisedCurrency">
+            </input>
+            </p>      
+        
+            <p>
+            <label for="roundx">roundx</label>
+            <input type="text" name="roundx"
+                   placeholder="roundx">
+            </input>
+            </p> 
+                    
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}

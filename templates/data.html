@@ -1,0 +1,36 @@
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>permalink</th>
+        <th>company</th>
+        <th>numEmps</th>
+        <th>category</th>
+        <th>city</th>
+        <th>state</th>
+        <th>fundedDate</th>
+        <th>raisedAmt</th>
+        <th>raisedCurrency</th>
+        <th>roundx</th>
+        <th>Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for tbl in tbl %}
+        <tr>
+          <td>{{ tbl.permalink }}</td>
+          <td>{{ tbl.company }}</td>
+          <td>{{ tbl.numEmps }}</td>
+          <td>{{ tbl.category }}</td>
+          <td>{{ tbl.city }}</td>
+          <td>{{ tbl.state }}</td>
+          <td>{{ tbl.fundedDate }}</td>
+          <td>{{ tbl.raisedAmt }}</td>
+          <td>{{ tbl.raisedCurrency }}</td>
+          <td>{{ tbl.roundx }}</td>
+          <td>{{ tbl.id }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
