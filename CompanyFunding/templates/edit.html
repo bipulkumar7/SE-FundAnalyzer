@@ -1,0 +1,93 @@
+{% block content %}
+<h1 style="width: 100%">
+    {% block title %} Update a record {% endblock %}
+</h1>
+
+<form method="POST">
+            <p>
+            <label for="permalink">permalink</label>
+            <input type="text" name="permalink"
+                   value={{ s.permalink }}
+                   placeholder="permalink">
+            </input>
+            </p>
+
+            <p>
+            <label for="company">company</label>
+            <input type="text" name="company"
+                   value={{ s.company }}
+                   placeholder="company">
+            </input>
+            </p>
+
+            <p>
+            <label for="numEmps">numEmps</label>
+            <input type="number" name="numEmps"
+                   value={{ s.numEmps }}
+                   placeholder="numEmps">
+            </input>
+            </p>
+
+            <p>
+            <label for="category">category</label>
+            <input type="text" name="category"
+                   value={{ s.category }}
+                   placeholder="category">
+            </input>
+            </p>
+
+            <p>
+            <label for="city">city</label>
+            <input type="text" name="city"
+                   value={{ s.city }}
+                   placeholder="city">
+            </input>
+            </p>
+        
+            <p>
+            <label for="state">state</label>
+            <input type="text" name="state"
+                   value={{ s.state }}
+                   placeholder="state">
+            </input>
+            </p>
+        
+        
+            <p>
+            <label for="fundedDate">fundedDate</label>
+            <input type="date" name="fundedDate"
+                   value={{ s.fundedDate }}
+                   placeholder="fundedDate">
+            </input>
+            </p>
+        
+        
+            <p>
+            <label for="raisedAmt">raisedAmt</label>
+            <input type="number" name="raisedAmt"
+                   value={{ s.raisedAmt }}
+                   placeholder="raisedAmt">
+            </input>
+            </p>
+             
+            <p>
+            <label for="raisedCurrency">raisedCurrency</label>
+            <input type="text" name="raisedCurrency"
+                    value={{ s.raisedCurrency }}
+                   placeholder="raisedCurrency">
+            </input>
+            </p>      
+        
+            <p>
+            <label for="roundx">roundx</label>
+            <input type="text" name="roundx"
+                   value={{ s.roundx }}
+                   placeholder="roundx">
+            </input>
+            </p> 
+                    
+             <p>
+             <button type="submit">Submit</button>
+             </p>
+    </form>
+{% endblock %}

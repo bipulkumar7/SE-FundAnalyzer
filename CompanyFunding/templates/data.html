@@ -1,0 +1,37 @@
+{% block content %}
+</form>
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>permalink</th>
+        <th>company</th>
+        <th>numEmps</th>
+        <th>category</th>
+        <th>city</th>
+        <th>state</th>
+        <th>fundedDate</th>
+        <th>raisedAmt</th>
+        <th>raisedCurrency</th>
+        <th>roundx</th>
+        <th>id</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in tbl %}
+       <tr>
+          <td><a href="{{ row.id }}">{{ row.permalink }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.company }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.numEmps }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.category }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.city }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.state }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.fundedDate }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.raisedAmt }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.raisedCurrency }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.roundx }}</a></td>
+          <td><a href="{{ row.id }}">{{ row.id }}</a></td>
+       </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

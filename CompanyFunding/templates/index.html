@@ -1,0 +1,20 @@
+{% block content %}
+    <h1 class="title">{% block title %} CFT {% endblock %}</h1>
+    <div class="content">
+        {% for tbl in tbl %}
+            <div class="tbl">
+                <th>{{ tbl.permalink }}</th>
+                <th>{{ tbl.company }}</th>
+                <th>{{ tbl.numEmps }}</th>
+                <th>{{ tbl.category }}</th>
+                <th>{{ tbl.city }}</th>
+                <th>{{ tbl.state }}</th>
+                <th>{{ tbl.fundedDate }}</th>
+                <th>{{ tbl.raisedAmt }}</th>
+                <th>{{ tbl.raisedCurrency }}</th>
+                <th>{{ tbl.roundx }}</th>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
