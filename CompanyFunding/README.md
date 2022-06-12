@@ -4,7 +4,7 @@
 
 ## How to run endpoints
 
-![How to run endpoints](https://github.com/bipulkumar7/SE-FundAnalyzer/blob/flask/Pic/CURD.gif)
+![How to run endpoints](https://github.com/bipulkumar7/SE-FundAnalyzer/blob/master/CompanyFunding/Pic/CURD.gif)
 
 ## Development strategy
 ![Current development](https://github.com/bipulkumar7/SE-FundAnalyzer/blob/flask/Pic/current-development.png)
